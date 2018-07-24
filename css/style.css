@@ -1,0 +1,77 @@
+/* ------------- Clases propias del estilo de la página --------------- */
+
+.navbar {
+    min-height: 10%;
+    background: rgba(0, 0, 139, 0.95);
+}
+
+.logo-img {}
+
+.container {
+    max-width: 96%;
+    margin-top: 24px;
+}
+
+.jumbotron {}
+
+.jumbotron-text {}
+
+.jumbotron-img {}
+
+.jumbotron-rsociales {}
+
+.left-column {
+    border-right: 1px dashed white;
+}
+
+.user-data {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.input-element {
+    width: 100%;
+    height: 28px;
+    padding: 10px;
+    color: white;
+    background: rgba(65, 105, 225, 0.65);
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.input-element::placeholder {
+    color: orange;
+}
+
+.label-class {
+    color: white;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.custom-checkbox,
+.custom-radio {
+    margin: 0px 5px;
+    height: 10px;
+}
+
+.btn-save {
+    width: 40%;
+    background: rgba(65, 105, 225, 0.95);
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* --- Estilo para pantallas pequeñas */
+
+@media (max-width: 770px) {
+    .right-column {
+        display: none;
+    }
+    .left-column {
+        border: none;
+    }
+}

@@ -1,4 +1,4 @@
-/* ------------- Clases propias del estilo de la página --------------- */
+/* ------------- Clases propias del estilo del Blog --------------- */
 
 .blog-body {
     background: #dddddd;
@@ -24,10 +24,6 @@ a.bg-primary {
     background: darkslateblue !important;
 }
 
-.border-bottom {
-    border-bottom: 1px solid rgb(46, 3, 114) !important;
-}
-
 a.bg-primary:hover {
     background: white !important;
 }
@@ -39,6 +35,10 @@ a.bg-primary:hover {
 a.text-primary:hover {
     color: darkslateblue !important;
     font-weight: 500;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(46, 3, 114) !important;
 }
 
 .container {
@@ -54,7 +54,10 @@ textarea {
 }
 
 
-/* --- Estilo responsivo para tamaños de pantallas --- */
+/* --------------- Estilo responsivo para tamaños de pantallas ----------------- */
+
+
+/* -/- Ancho maximo para el contenedor en pantalla extra anchas -\- */
 
 @media screen and (min-width: 1366px) {
     .container {
@@ -62,18 +65,21 @@ textarea {
     }
 }
 
+
+/* -/- Tamaño de Iconos de Font Awesome en pantallas menores a 400px -\- */
+
 @media (max-width: 400px) {
     .fa-2x {
         font-size: 1.25em !important;
     }
 }
 
+
+/* -/- Estilo de barra principal superior en pantallas menores a 578px -\- */
+
 @media (max-width: 578px) {
     .img-logo {
         max-width: 3rem;
-    }
-    .navbar {
-        height: 8%;
     }
     .navbar-text {
         font-size: 1rem !important;

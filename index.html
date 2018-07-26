@@ -14,7 +14,9 @@
 </head>
 
 <body class="blog-body text-center">
+    <!-- // Encabezado * Logo, Slogan y barras de navegación de redes sociales y enlaces del blog \\ -->
     <header>
+        <!-- ** Barra principal: Logo y enlaces de redes sociales ** -->
         <div class="navbar fixed-top sticky-top row">
             <div class="col-12 col-md-8 col-lg-9 d-flex">
                 <a class="navbar-brand img-fluid">
@@ -32,6 +34,7 @@
                 <a href="#" class="text-primary"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
+        <!-- ** Barra de navegación de los enlaces del blog ** -->
         <nav class="row navbar navbar-light bg-light nav-fill p-0">
             <a class="col-12 col-sm-2 nav-item nav-link bg-primary text-primary border-bottom" href="#">Inicio</a>
             <a class="col-12 col-sm-2 nav-item nav-link bg-primary text-primary border-bottom" href="#">Bandas</a>
@@ -41,9 +44,12 @@
             <a class="col-12 col-sm-2 nav-item nav-link bg-primary text-primary border-bottom" href="#">Canciones</a>
         </nav>
     </header>
+    <!-- // Contenedor principal *  Artículos del blog y la sección de busqueda \\ -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-9 col-lg-8 col-xl-8">
+            <!-- ** Contenedor Columna de Artículos del Blog ** -->
+            <article class="col-12 col-md-9 col-lg-8 col-xl-8">
+                <!-- //////////////////// 1er. Artículo \\\\\\\\\\\\\\\\\\\\\ -->
                 <div class="row mt-2">
                     <div class="col-12 card border-0 rounded-0 pt-2">
                         <div class="card-title text-left">
@@ -75,6 +81,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- //////////////////// 2do. Artículo \\\\\\\\\\\\\\\\\\\\\ -->
                 <div class="row mt-2">
                     <div class="col-12 card border-0 rounded-0 pt-2">
                         <div class="card-title text-left">
@@ -105,15 +112,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-lg-4 col-xl-4 p-0 pt-2 pl-2 d-none d-sm-none d-md-block">
+            </article>
+            <!-- ** Contenedor Columna de la Sección de Busqueda (Esta oculta en pantallas menores de 768px) ** -->
+            <section class="col-md-3 col-lg-4 col-xl-4 p-0 pt-2 pl-2 d-none d-sm-none d-md-block">
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text"><i class="fas fa-search fa-lg"></i></div>
                     </div>
                     <input type="text" class="form-control" placeholder="Buscar por..."></textarea>
                 </div>
-                <div class="list-group">
+                <div class="list-group mt-2">
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light">Aerosmith</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light">The All-American Rejects</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light">Audioslave</a>
@@ -147,7 +155,7 @@
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light">Stone Temple Pilots</a>
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light">Velvet Revolver</a>
                 </div>
-            </div>
+            </section>
         </div>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>

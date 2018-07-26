@@ -1,33 +1,56 @@
 /* ------------- Clases propias del estilo de la página --------------- */
 
-.navbar {
-    min-height: 10%;
-    background: rgba(0, 0, 139, 0.95);
+.blog-body {
+    background: #dddddd;
 }
 
-.logo-img {}
+.navbar {
+    background: rgb(46, 3, 114);
+}
+
+.navbar-text {
+    font-size: 1.5rem;
+}
+
+.img-logo {
+    max-width: 5rem;
+}
+
+.rsociales {
+    font-size: 1rem;
+}
+
+a.bg-primary {
+    background: darkslateblue !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(46, 3, 114) !important;
+}
+
+a.bg-primary:hover {
+    background: white !important;
+}
+
+.text-primary {
+    color: white !important;
+}
+
+a.text-primary:hover {
+    color: darkslateblue !important;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+
+/* ************************************************* */
 
 .container {
     max-width: 96%;
     margin-top: 24px;
-}
-
-.jumbotron {}
-
-.jumbotron-text {}
-
-.jumbotron-img {}
-
-.jumbotron-rsociales {}
-
-.left-column {
-    border-right: 1px dashed white;
-}
-
-.user-data {
-    margin-top: 10px;
-    font-size: 18px;
-    color: white;
 }
 
 .input-element {
@@ -67,11 +90,20 @@
 
 /* --- Estilo para pantallas pequeñas */
 
-@media (max-width: 770px) {
-    .right-column {
-        display: none;
+@media (max-width: 400px) {
+    .fa-2x {
+        font-size: 1.25em !important;
     }
-    .left-column {
-        border: none;
+}
+
+@media (max-width: 578px) {
+    .img-logo {
+        max-width: 3rem;
+    }
+    .navbar {
+        height: 8%;
+    }
+    .navbar-text {
+        font-size: 1rem !important;
     }
 }

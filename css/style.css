@@ -1,87 +1,105 @@
-/* ------------- Clases propias del estilo del Blog --------------- */
+/* ------------- Clases propias del estilo del Blog --------------- 
+   Se utilizaron algunos helpers y clases del Framework Bootstrap y
+   se forzaron (override) con el argumento !important */
 
 .blog-body {
-    background: #dddddd;
+  background: #dddddd;
 }
 
 .navbar {
-    background: rgb(46, 3, 114);
+  background: #2e0372;
 }
 
 .navbar-text {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .img-logo {
-    max-width: 5rem;
+  max-width: 5rem;
 }
 
 .rsociales {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 a.bg-primary {
-    background: darkslateblue !important;
+  background: #483d8b !important;
 }
 
 a.bg-primary:hover {
-    background: white !important;
+  background: white !important;
 }
 
 .text-primary {
-    color: white !important;
+  color: white !important;
 }
 
 a.text-primary:hover {
-    color: darkslateblue !important;
-    font-weight: 500;
+  color: #483d8b !important;
+  font-weight: 500;
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgb(46, 3, 114) !important;
+  border-bottom: 1px solid #2e0372 !important;
 }
 
 .container {
-    max-width: 96% !important;
+  max-width: 96% !important;
 }
 
 .card-text {
-    font-size: 1rem;
+  font-size: 1rem !important;
 }
 
-textarea {
-    min-height: 3rem;
+.input-group textarea {
+  min-height: 50px !important;
+  max-height: 70px !important;
+}
+
+.btn-outline-info {
+  color: #483d8b !important;
+  background-color: #fff !important;
+  border-color: #483d8b !important;
+}
+
+.btn-outline-info:hover {
+  color: #fff !important;
+  background-color: #483d8b !important;
+  border-color: #483d8b !important;
+}
+
+.btn-outline-info:focus,
+.btn-outline-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(69, 1, 100, 0.5) !important;
 }
 
 
-/* --------------- Estilo responsivo para tamaños de pantallas ----------------- */
-
-
-/* -/- Ancho maximo para el contenedor en pantalla extra anchas -\- */
+/* --------------- Estilo responsivo para tamaños de pantallas ----------------- 
+   -/- Ancho maximo para el contenedor en pantalla extra anchas -\- */
 
 @media screen and (min-width: 1366px) {
-    .container {
-        max-width: 1200px !important;
-    }
+  .container {
+    max-width: 1200px !important;
+  }
 }
 
 
 /* -/- Tamaño de Iconos de Font Awesome en pantallas menores a 400px -\- */
 
 @media (max-width: 400px) {
-    .fa-2x {
-        font-size: 1.25em !important;
-    }
+  .fa-2x {
+    font-size: 1.25em !important;
+  }
 }
 
 
 /* -/- Estilo de barra principal superior en pantallas menores a 578px -\- */
 
 @media (max-width: 578px) {
-    .img-logo {
-        max-width: 3rem;
-    }
-    .navbar-text {
-        font-size: 1rem !important;
-    }
+  .img-logo {
+    max-width: 3rem;
+  }
+  .navbar-text {
+    font-size: 1rem !important;
+  }
 }
